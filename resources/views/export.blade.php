@@ -185,8 +185,8 @@
                 di bagian lain
                 dalam lingkungan perusahaan</li>
             <li>Dalam melaksanakan tugas, <span class="bld">Pihak Kedua</span> bertanggung jawab kepada
-                {{ $wakil_pihak_pertama }}
-                sebagai {{ $jab_wakil_pihak_pertama }}.
+                {{ $penanggung_jawab }}
+                sebagai {{ $jab_penanggung_jawab }}.
                 </li>
         </ol>
 
@@ -198,8 +198,8 @@
                     Pertama</span> akan memberikan kompensasi
                 berupa; <br> upah: Rp {{ $nominal }},- per bulan</li>
             <li>Kompensasi <span class="bld">Pihak Kedua</span> sebagaimana dimaksud dalam Pasal ini akan dibayarkan
-                pada tanggal 25
-                setiap bulannya dimulai untuk pembayaran pertama pada bulan <span class="bld">{{ $mulai_bayar }}</span> ke rekening
+                pada tanggal {{ $tgl_bayar }}
+                setiap bulannya dimulai untuk pembayaran pertama pada bulan <span class="bld">{{ $bulan_mulai_bayar }}</span> ke rekening
                 sebagai berikut: <br>
                 <table>
                     <tr>
@@ -384,14 +384,14 @@
             <tr>
                 <td>
                     PT. Gravita Dritama Sentosa,
-                    <div class="pihak mt-5">{{ $wakil_pihak_pertama }}</div>
-                    {{ $jab_wakil_pihak_pertama }}
+                    <div class="pihak mt-5">{{ $ttd1 }}</div>
+                    {{ $jab_ttd1 }}
                 </td>
                 <td></td>
                 <td>
                     Menyetujui
-                    <div class="pihak mt-5">{{ $pihak_kedua }}</div>
-                    Karyawan Magang
+                    <div class="pihak mt-5">{{ $ttd2 }}</div>
+                    {{ $jab_ttd2 }}
                 </td>
             </tr>
         </table>
